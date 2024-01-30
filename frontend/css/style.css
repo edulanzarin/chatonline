@@ -56,7 +56,6 @@ body {
     border-radius: 5px;
 }
 
-<<<<<<< HEAD
 .login__pass {
     border: none;
     padding: 15px;
@@ -68,8 +67,6 @@ body {
     border-radius: 5px;
 }
 
-=======
->>>>>>> 26188114a2b11202c0497e8fd1505cdcc1985ec3
 .login__input:focus {
     outline: 2px solid #f2f2f2;
 }
