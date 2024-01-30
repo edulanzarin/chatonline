@@ -2,7 +2,10 @@
 const login = document.querySelector(".login")
 const loginForm = login.querySelector(".login__form")
 const loginInput = login.querySelector(".login__input")
+<<<<<<< HEAD
 const loginPass = login.querySelector(".login__pass");
+=======
+>>>>>>> 26188114a2b11202c0497e8fd1505cdcc1985ec3
 
 // chat elements
 const chat = document.querySelector(".chat")
@@ -77,6 +80,7 @@ const processMessage = ({ data }) => {
 const handleLogin = (event) => {
     event.preventDefault()
 
+<<<<<<< HEAD
     if (loginPass.value === "ideal") {
         user.id = crypto.randomUUID()
         user.name = loginInput.value
@@ -91,6 +95,17 @@ const handleLogin = (event) => {
         // Senha incorreta, adicione a lógica desejada aqui (ex: exibir mensagem de erro)
         console.log("Senha incorreta. Tente novamente.");
     }
+=======
+    user.id = crypto.randomUUID()
+    user.name = loginInput.value
+    user.color = getRandomColor()
+
+    login.style.display = "none"
+    chat.style.display = "flex"
+
+    websocket = new WebSocket("wss://chatapp-acba.onrender.com")
+    websocket.onmessage = processMessage
+>>>>>>> 26188114a2b11202c0497e8fd1505cdcc1985ec3
 }
 
 const sendMessage = (event) => {
