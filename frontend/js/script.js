@@ -77,7 +77,7 @@ const processMessage = ({ data }) => {
 const handleLogin = (event) => {
     event.preventDefault()
 
-    if (loginPass.value === "ideal") {
+    if (loginPass.value === "teste") {
         user.id = crypto.randomUUID()
         user.name = loginInput.value
         user.color = getRandomColor()
